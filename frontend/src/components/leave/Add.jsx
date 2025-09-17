@@ -19,7 +19,7 @@ userId:user._id,
 e.preventDefault();
 try {
            const response = await axios.post(
-             `http://localhost:5000/api/leave/add`,leave,
+             `https://employee-management-system-mern-sta-ten.vercel.app/api/leave/add`,leave,
              {
                headers: {
                  'Authorization': `Bearer ${localStorage.getItem("token")}`,

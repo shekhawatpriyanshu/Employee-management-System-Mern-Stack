@@ -29,7 +29,7 @@ import axios from "axios";
 
             try {
                 const response = await axios.delete(
-                    `http://localhost:5000/api/department/${id}`,
+                    `https://employee-management-system-mern-sta-ten.vercel.app/api/department/${id}`,
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem("token")}`,

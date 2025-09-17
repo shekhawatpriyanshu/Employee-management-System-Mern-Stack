@@ -15,7 +15,7 @@ const AddDepartment = () => {
     const handleSubmit=async(e)=>{
         e.preventDefault();
 try {
-    const response=await axios.post('http://localhost:5000/api/department/add',
+    const response=await axios.post('https://employee-management-system-mern-sta-ten.vercel.app/api/department/add',
       department,{
       headers:{
         "Authorization":`Bearer ${localStorage.getItem('token')}`

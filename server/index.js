@@ -13,7 +13,12 @@ import leaveRouter from'./routes/leave.js'
 dotenv.config()
 const port=process.env.PORT || 3000;
 const app=express();
-app.use(cors())
+app.use(cors(
+    {
+    origin: "https://employee-management-system-mern-sta.vercel.app/",
+    credentials: true,
+  }
+))
 app.use(express.json()) 
 app.use(express.static('public/uploads'))
 app.use('/api/auth',authRouter)

@@ -17,7 +17,7 @@ const {user}=useAuth()
   const fetchLeaves = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/leave/${id}/${user.role}`,
+        `https://employee-management-system-mern-sta-ten.vercel.app/api/leave/${id}/${user.role}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

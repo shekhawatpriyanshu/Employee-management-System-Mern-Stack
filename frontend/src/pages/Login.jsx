@@ -11,7 +11,7 @@ const Login = () => {
     const handleSubmit=async(e)=>{
         e.preventDefault();// prevent default submission of form
 try {
-   const response=await axios.post('http://localhost:5000/api/auth/login',{email,password}
+   const response=await axios.post('https://employee-management-system-mern-sta-ten.vercel.app/api/auth/login',{email,password}
 
    )
    if(response.data.success){
